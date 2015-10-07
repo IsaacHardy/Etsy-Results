@@ -6,11 +6,37 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <header>
+    <h1>Etsy</h1>
+    <form>
+      <input placeholder="Search">
+      <button>Search</button>
+    </form>
+    <ul>
+      <li><p>Sell on Etsy</p></li>
+      <li><p>Register</p></li>
+      <li><button>Sign In</button></li>
+      <li><div>Cart</div></li>
+    </ul>
+  </header>
+  
+  <div class="container"></div>
 
-  <h1>Hello World</h1>
+  <script type="text/template" id="itemTemplate">
+    <div>
+      <p>
+        <%= title %>
+      </p>
+      <p class="price">
+        $<%= price %>
+      </p>
+    </div>
+  </script>
 
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
-   <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  
+  <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
