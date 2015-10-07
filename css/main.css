@@ -1,0 +1,84 @@
+header {
+  display: inline;
+  margin-left: 12em; }
+  header h1 {
+    display: inline-block;
+    color: #F56400;
+    font-weight: normal; }
+  header form {
+    display: inline-block;
+    width: 335px;
+    margin-left: 1em; }
+    header form input {
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 0;
+      border-right: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding: 6px 10px;
+      margin-left: 0;
+      width: 100%;
+      border: 1px solid #CFCBC8;
+      background: #f9f9f8;
+      height: 20px; }
+      header form input:hover {
+        outline: none;
+        border: 1px solid #bcb7b3; }
+    header form button {
+      color: #fff;
+      border-radius: 0 3px 3px 0;
+      border: 1px solid #29859c;
+      font-size: 14px;
+      font-weight: bold;
+      height: 34px;
+      line-height: 17px;
+      padding: 8px 12px;
+      text-align: center;
+      display: inline-block;
+      background-color: #34A8C4;
+      position: absolute;
+      top: 29px;
+      left: 560px; }
+      header form button:hover {
+        outline: none;
+        background-color: #58bbd3; }
+  header ul {
+    float: right;
+    list-style: none;
+    margin-right: 12em;
+    margin-top: 18px; }
+    header ul li {
+      display: inline-block;
+      font-size: 14px;
+      padding-right: 15px;
+      font-weight: normal; }
+      header ul li a {
+        text-decoration: none;
+        color: #34A8C4; }
+        header ul li a span {
+          color: #555555; }
+    header ul button {
+      padding: 8px;
+      line-height: 16px;
+      font-size: 14px;
+      border: 1px solid #34A8C4;
+      color: #34A8C4;
+      background-color: #fff;
+      border-radius: 3px; }
+      header ul button:hover {
+        background-color: #edf8fa; }
+
+nav {
+  margin-left: 12em; }
+  nav ul {
+    list-style: none;
+    padding: 0; }
+    nav ul li {
+      display: inline-block;
+      margin-right: 12px; }
+      nav ul li a {
+        text-decoration: none;
+        color: #555555;
+        font-size: 14px;
+        padding: 0 3px; }

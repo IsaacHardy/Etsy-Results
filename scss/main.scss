@@ -1,6 +1,157 @@
 $primaryColor: #34A8C4;
+$etsyColor: #F56400;
+$textColor: #555555;
+
 
 header {
+  display: inline;
+  margin-left: 12em;
+
+  h1 {
+
+    display: inline-block;
+    color: $etsyColor;
+    font-weight: normal;
+
+  }
+
+  form {
+
+    display: inline-block;
+    width: 335px;
+    margin-left: 1em;
+
+    input {
+
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 0;
+      border-right: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      padding: 6px 10px;
+      margin-left: 0;
+      width: 100%;
+      border: 1px solid #CFCBC8;
+      background: #f9f9f8;
+      height: 20px;
+
+      &:hover {
+
+        outline: none;
+        border: 1px solid #bcb7b3;
+      }
+    }
+
+    button {
+
+      color: #fff;
+      border-radius: 0 3px 3px 0;
+      border: 1px solid darken($primaryColor, 10%);
+      font-size: 14px;
+      font-weight: bold;
+      height: 34px;
+      line-height: 17px;
+      padding: 8px 12px;
+      text-align: center;
+      display: inline-block;
+      background-color: $primaryColor;
+      position: absolute;
+      top: 29px;
+      left: 560px;
+
+      &:hover {
+
+        outline: none;
+        background-color: lighten($primaryColor, 10%);
 
 
+      }
+    }
+  }
+
+  ul {
+
+    float: right;
+    list-style: none;
+    margin-right: 12em;
+    margin-top: 18px;
+
+    li {
+
+      display: inline-block;
+      font-size: 14px;
+      padding-right: 15px;
+      font-weight: normal;
+      
+      a {
+
+        text-decoration: none;
+        color: $primaryColor; 
+
+        span {
+
+          color: $textColor;
+
+          // Vertical LINE
+
+          // &:before {
+          //   content: '';
+          //   position: absolute;
+          //   display: block;
+          //   left: 0;
+          //   top: 18px;
+          //   bottom: 20px;
+          //   background-color: #eee;
+          //   width: 1px;
+
+          }
+        }
+      }
+
+      button {
+
+        padding: 8px;
+        line-height: 16px;
+        font-size: 14px;
+        border: 1px solid $primaryColor;
+        color: $primaryColor;
+        background-color: #fff;
+        border-radius: 3px;
+
+        &:hover {
+
+          background-color: lighten($primaryColor, 47%);
+
+        }
+      }
+    }
+  }
+
+nav {
+
+  margin-left: 12em;
+
+  ul {
+
+    list-style: none;
+    padding: 0;
+
+    li {
+
+      display: inline-block;
+      margin-right: 12px;
+     
+     a {
+
+       text-decoration: none;
+       color: $textColor;
+       font-size: 14px;
+       padding: 0 3px;
+
+
+     }
+
+    }
+  }
 }
