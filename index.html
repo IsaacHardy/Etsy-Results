@@ -15,7 +15,7 @@
     <ul>
       <li><p><a href='#'>Sell on Etsy</a></p></li>
       <li><p><a href='#'>Register</a></p></li>
-      <li><button>Sign In</button></li>
+      <li class="butt"><button>Sign In</button></li>
       <li class="v-line">
         <div>
           <a href='#'>
@@ -65,7 +65,43 @@
         </ul>
       </div>
       <h3>Refine your search</h3>
-      <div class="sidebar2"></div>
+      <div class="sidebar2">
+        <div class="sec1">
+          <p>Item Type</p>
+          <div class="sec1-list">
+            <label>
+              <input type="radio">
+              <a href="#">All Items</a>
+            </label>
+            <label>
+              <input type="radio">
+              <a href="#">Handmade</a>
+            </label>
+            <label>
+              <input type="radio">
+              <a href="#">Vintage</a> 
+            </label>      
+
+          </div>         
+
+        </div>
+        <hr>
+        <div class="sec2">
+          <div>
+            <p>Price</p>
+          </div>
+          <div>
+            <input type="search" placeholder="Low">
+            <p>to</p>
+            <input type="search" placeholder="High">
+            <button></button>
+          </div>
+          
+
+        </div>
+
+
+      </div>
     </div>
     
     <div class="results">
@@ -88,18 +124,28 @@
   <script type="text/template" id="itemTemplate">
     <div class='results-box'>
       <img src="<%= Images[0].url_170x135 %>">
-      <p class='title'>
-        <%= title %>
-      </p>
-      <p class="author">
-        <%= Shop.shop_name %>
-      </p> 
-      <p class="price">
-        $<%= price %>
-      </p>
-      <p class="currency">
-        <%= currency_code %>
-      </p> 
+      <div class="results-box-text">
+        <div class="t-a">
+          <p class='title'>
+            <a href="#">
+              <%= title %>
+            </a>
+          </p>
+        </div>
+        <p class="author">
+          <a href="#">
+            <%= Shop.shop_name %>
+          </a>
+          </p> 
+        <div class="p-c">
+          <p class="price">
+            $<%= price %>
+          </p>
+          <p class="currency">
+            <%= currency_code %>
+          </p> 
+        </div>
+      <div>
     </div>
   </script>
 

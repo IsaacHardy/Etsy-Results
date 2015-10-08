@@ -79,8 +79,8 @@ header {
 
     float: right;
     list-style: none;
-    margin-right: 12em;
-    margin-top: 12px;
+    margin-right: 250px;
+    margin-top: 24px;
 
     li {
 
@@ -88,11 +88,7 @@ header {
       font-size: 14px;
       padding-right: 15px;
       font-weight: normal;
-
-
-
-
-      
+     
       a {
 
         text-decoration: none;
@@ -113,34 +109,10 @@ header {
           color: $textColor;
           text-decoration: none;
           display: block;
-
-         
-
-          &:hover {
-            color: black;
-
-
-          }
-
-          }
         }
-
-       // Vertical LINE
-
-      &:before {
-        content: '';
-        position: absolute;
-        display: block;
-        right: 247px;
-        top: 26px;
-        background-color: #eee;
-        width: 1px;
-        height: 40px;
-
-      }
       }
 
-      button {
+       button {
 
         padding: 8px;
         line-height: 16px;
@@ -156,8 +128,35 @@ header {
 
         }
       }
-    }
+
+      .butt {
+        margin-right: 4px;
+
+      }
+
+    } 
+
+    .v-line {
+
+      position: absolute;
+      top: 24px;
+      right: 184px;
+
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        right: 64px;
+        top: 2px;
+        background-color: #eee;
+        width: 1px;
+        height: 40px;
+
+        }
+      }     
   }
+}
 
 nav {
 
@@ -168,6 +167,7 @@ nav {
     list-style: none;
     padding: 0;
     margin: 10px 0 10px 0;
+
 
     li {
 
@@ -183,6 +183,8 @@ nav {
 
 
      }
+
+
 
     }
   }
@@ -224,6 +226,7 @@ nav {
       font-size: 13px;
       background-color: #fff;
       border: 1px solid #E1E3DF;
+      border-radius: 3px;
 
       ul {
 
@@ -255,8 +258,22 @@ nav {
       border: 1px solid black;
       font-size: 13px;
       border: 1px solid #E1E3DF;
+      background-color: #fff;
+      border-radius: 3px;
+
+      .sec1 {
+
+        .sec1-list {
 
 
+          label {
+
+            display: block;
+          }
+
+        }
+
+      }
 
     }
 
@@ -277,7 +294,7 @@ nav {
       .results-text-right {
         display: inline-block;
         margin: 0;
-        margin-left: 300px;
+        margin-left: 325px;
         font-size: 13px;
       }
 
@@ -301,13 +318,83 @@ nav {
       border: 1px solid black;
       float: left;
       width: 220px;
-      height: 225px;
+      height: 222px;
       font-size: 13px;
       margin: 10px;
+      text-overflow: hidden;
+      border: 1px solid #E1E3DF;
+      border-radius: 3px;
 
       img {
 
         width: 100%;
+        border-radius: 3px;
+
+      }
+
+      .results-box-text {
+
+        background-color: #fff;
+        line-height: 22px;
+
+        p {
+
+          margin: 0;
+
+        }
+
+        .t-a {
+
+
+
+
+
+          .title {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; 
+            margin-left: 6px;
+
+            a {
+              color: #555555;
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+
+          }
+
+        } 
+
+        .author {
+
+          display: inline-block;
+          font-size: 12px;
+          margin-left: 6px;
+
+          a {
+              color: #AAAAAA;
+            }
+
+          }      
+
+        .p-c{
+
+          color: #7BC146;
+          float: right;
+          font-size: 12px;
+          margin-right: 6px;
+
+          .price {
+           display: inline-block;
+          }
+
+          .currency {
+          display: inline-block;
+          }
+
+        }
 
       }
 
