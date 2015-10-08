@@ -1,5 +1,7 @@
 hr {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  border-bottom: 1px solid #E1E3DF;
+  border-top: none; }
 
 header {
   display: inline;
@@ -108,17 +110,31 @@ nav {
   background-color: #F5F5F1;
   display: inline-block;
   width: 100%; }
+  .main-body a {
+    text-decoration: none;
+    color: #34A8C4; }
+    .main-body a:hover {
+      text-decoration: underline; }
   .main-body .side {
     float: left;
     margin-left: 200px; }
+    .main-body .side h3 {
+      font-size: 14px; }
     .main-body .side .sidebar1 {
       width: 245px;
       height: 410px;
-      border: 1px solid black; }
+      border: 1px solid black;
+      font-size: 14px;
+      background-color: #fff;
+      border: 1px solid #E1E3DF; }
+      .main-body .side .sidebar1 ul {
+        list-style: none; }
     .main-body .side .sidebar2 {
       width: 245px;
       height: 610px;
-      border: 1px solid black; }
+      border: 1px solid black;
+      font-size: 14px;
+      border: 1px solid #E1E3DF; }
   .main-body .results {
     width: 800px;
     float: right;
@@ -126,10 +142,14 @@ nav {
     .main-body .results .results-text .results-text-right {
       display: inline-block;
       margin: 0;
-      margin-left: 275px; }
+      margin-left: 275px;
+      font-size: 14px; }
     .main-body .results .results-text .results-text-left {
       display: inline-block;
-      margin: 0; }
+      margin: 0;
+      font-size: 14px; }
+      .main-body .results .results-text .results-text-left span {
+        font-weight: bold; }
     .main-body .results .results-box {
       border: 1px solid black;
       float: left;

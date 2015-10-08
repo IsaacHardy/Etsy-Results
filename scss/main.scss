@@ -5,6 +5,8 @@ $textColor: #555555;
 
 hr {
   margin-bottom: 0;
+  border-bottom: 1px solid #E1E3DF;
+  border-top: none;
 }
 header {
   display: inline;
@@ -192,16 +194,42 @@ nav {
   display: inline-block;
   width: 100%;
 
+  a {
+
+    text-decoration: none;
+    color: $primaryColor;
+
+    &:hover {
+      text-decoration: underline;
+    } 
+
+  }
+
   .side {
 
     float: left;
     margin-left: 200px;
+
+    h3 {
+    
+    font-size: 14px;
+
+    }
 
     .sidebar1 {
 
       width: 245px;
       height: 410px;
       border: 1px solid black;
+      font-size: 14px;
+      background-color: #fff;
+      border: 1px solid #E1E3DF;
+
+      ul {
+
+        list-style: none;
+
+      }
 
 
 
@@ -212,6 +240,8 @@ nav {
       width: 245px;
       height: 610px;
       border: 1px solid black;
+      font-size: 14px;
+      border: 1px solid #E1E3DF;
 
 
 
@@ -228,15 +258,24 @@ nav {
 
     .results-text {
 
+
+
       .results-text-right {
         display: inline-block;
         margin: 0;
         margin-left: 275px;
+        font-size: 14px;
       }
 
       .results-text-left {
         display: inline-block;
         margin: 0;
+        font-size: 14px;
+
+        span {
+
+          font-weight: bold;
+        }
 
       }
 
