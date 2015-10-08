@@ -1,8 +1,11 @@
+$backgroundColor: #F5F5F1;
 $primaryColor: #34A8C4;
 $etsyColor: #F56400;
 $textColor: #555555;
 
-
+hr {
+  margin-bottom: 0;
+}
 header {
   display: inline;
   margin-left: 12em;
@@ -75,7 +78,7 @@ header {
     float: right;
     list-style: none;
     margin-right: 12em;
-    margin-top: 18px;
+    margin-top: 12px;
 
     li {
 
@@ -83,30 +86,56 @@ header {
       font-size: 14px;
       padding-right: 15px;
       font-weight: normal;
+
+
+
+
       
       a {
 
         text-decoration: none;
-        color: $primaryColor; 
+        color: $primaryColor;
+
+        &:hover {
+          text-decoration: underline;
+        } 
+
+        img {
+
+          width: 75%;
+
+        }
 
         span {
 
           color: $textColor;
+          text-decoration: none;
+          display: block;
 
-          // Vertical LINE
+         
 
-          // &:before {
-          //   content: '';
-          //   position: absolute;
-          //   display: block;
-          //   left: 0;
-          //   top: 18px;
-          //   bottom: 20px;
-          //   background-color: #eee;
-          //   width: 1px;
+          &:hover {
+            color: black;
+
+
+          }
 
           }
         }
+
+       // Vertical LINE
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        right: 247px;
+        top: 26px;
+        background-color: #eee;
+        width: 1px;
+        height: 40px;
+
+      }
       }
 
       button {
@@ -136,6 +165,7 @@ nav {
 
     list-style: none;
     padding: 0;
+    margin: 10px 0 10px 0;
 
     li {
 
@@ -154,4 +184,57 @@ nav {
 
     }
   }
+}
+
+.main-body {
+
+  background-color: $backgroundColor;
+  display: inline-block;
+  width: 100%;
+
+  .side {
+
+    float: left;
+
+    .sidebar1 {
+
+      width: 245px;
+      height: 410px;
+      border: 1px solid black;
+
+
+
+    }
+
+    .sidebar2 {
+
+      width: 245px;
+      height: 610px;
+      border: 1px solid black;
+
+
+
+    }
+
+  }
+
+
+  .results {
+
+    width: 800px;
+    float: right;
+    margin-right: 135px;
+
+    .results-box {
+      border: 1px solid black;
+      float: left;
+      width: 225px;
+      height: 228px;
+      font-size: 12px;
+      margin: 10px;
+
+    }
+
+  }
+
 }

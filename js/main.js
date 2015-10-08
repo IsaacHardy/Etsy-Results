@@ -8,7 +8,7 @@
 
   _.each(drink.results, function (item) {
     var itemHTML = templateFunction(item);
-    $('.container').append(itemHTML);
+    $('.results').append(itemHTML);
 
   });
 
