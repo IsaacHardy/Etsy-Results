@@ -221,13 +221,26 @@ nav {
       width: 245px;
       height: 410px;
       border: 1px solid black;
-      font-size: 14px;
+      font-size: 13px;
       background-color: #fff;
       border: 1px solid #E1E3DF;
 
       ul {
 
         list-style: none;
+        padding-left: 25px;
+
+        li {
+          padding-bottom: 6px;
+
+          span {
+
+            font-weight: bold;
+
+          }
+
+
+        }
 
       }
 
@@ -238,9 +251,9 @@ nav {
     .sidebar2 {
 
       width: 245px;
-      height: 610px;
+      height: 600px;
       border: 1px solid black;
-      font-size: 14px;
+      font-size: 13px;
       border: 1px solid #E1E3DF;
 
 
@@ -258,19 +271,21 @@ nav {
 
     .results-text {
 
+      margin-top: 16px;
 
 
       .results-text-right {
         display: inline-block;
         margin: 0;
-        margin-left: 275px;
-        font-size: 14px;
+        margin-left: 300px;
+        font-size: 13px;
       }
 
       .results-text-left {
         display: inline-block;
         margin: 0;
-        font-size: 14px;
+        font-size: 13px;
+        margin-left: 8px;
 
         span {
 
@@ -285,10 +300,16 @@ nav {
     .results-box {
       border: 1px solid black;
       float: left;
-      width: 225px;
-      height: 228px;
-      font-size: 12px;
+      width: 220px;
+      height: 225px;
+      font-size: 13px;
       margin: 10px;
+
+      img {
+
+        width: 100%;
+
+      }
 
     }
 
