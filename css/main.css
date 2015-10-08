@@ -109,7 +109,8 @@ nav {
   display: inline-block;
   width: 100%; }
   .main-body .side {
-    float: left; }
+    float: left;
+    margin-left: 200px; }
     .main-body .side .sidebar1 {
       width: 245px;
       height: 410px;
@@ -121,7 +122,14 @@ nav {
   .main-body .results {
     width: 800px;
     float: right;
-    margin-right: 135px; }
+    margin-right: 105px; }
+    .main-body .results .results-text .results-text-right {
+      display: inline-block;
+      margin: 0;
+      margin-left: 275px; }
+    .main-body .results .results-text .results-text-left {
+      display: inline-block;
+      margin: 0; }
     .main-body .results .results-box {
       border: 1px solid black;
       float: left;

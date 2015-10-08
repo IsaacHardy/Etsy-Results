@@ -195,6 +195,7 @@ nav {
   .side {
 
     float: left;
+    margin-left: 200px;
 
     .sidebar1 {
 
@@ -223,7 +224,24 @@ nav {
 
     width: 800px;
     float: right;
-    margin-right: 135px;
+    margin-right: 105px;
+
+    .results-text {
+
+      .results-text-right {
+        display: inline-block;
+        margin: 0;
+        margin-left: 275px;
+      }
+
+      .results-text-left {
+        display: inline-block;
+        margin: 0;
+
+      }
+
+
+    }
 
     .results-box {
       border: 1px solid black;
