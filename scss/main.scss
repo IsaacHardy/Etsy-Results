@@ -275,6 +275,102 @@ nav {
 
       }
 
+      .sec2 {
+
+        .sec2-input1, .sec2-input2, p, button {
+          display: inline-block;
+        }
+
+        .sec2-input1, .sec2-input2 {
+
+          width: 70px;
+          height: 40px;
+        }
+
+        p {
+
+
+        }
+
+        button {
+          width: 40px;
+          height: 40px;
+
+        }
+
+
+
+      }
+
+      .sec3 {
+
+        ul {
+
+          padding-left: 0;
+
+          li {
+
+            display: inline-block;
+
+            a {
+
+              span {
+
+                width: 20px;
+                height: 20px;
+                border: 1px solid black;
+                padding: 0px 10px 5px 10px;
+
+                
+               
+              }
+              .color1 {
+                  background-color: #F40932;
+
+                }
+                .color2 {
+                  background-color: #FF7F00;
+                }
+                .color3 {
+                  background-color: #F3CC09;
+                }
+                .color4 {
+                  background-color: #08C209;
+                }
+                .color5 {
+                  background-color: #0ACCF3;
+                }
+                .color6 {
+                  background-color: #A60AF3;
+                }
+                .color7 {
+                  background-color: #000000;
+                }
+                .color8 {
+                  background-color: #ffffff;
+                }
+            }
+          }
+        }
+      }
+
+      .sec4 {
+
+
+      }
+
+      .sec5 {
+
+
+
+      }
+
+      .sec6 {
+
+
+
+      }
+
     }
 
   }

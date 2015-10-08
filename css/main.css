@@ -149,6 +149,39 @@ nav {
       border-radius: 3px; }
       .main-body .side .sidebar2 .sec1 .sec1-list label {
         display: block; }
+      .main-body .side .sidebar2 .sec2 .sec2-input1, .main-body .side .sidebar2 .sec2 .sec2-input2, .main-body .side .sidebar2 .sec2 p, .main-body .side .sidebar2 .sec2 button {
+        display: inline-block; }
+      .main-body .side .sidebar2 .sec2 .sec2-input1, .main-body .side .sidebar2 .sec2 .sec2-input2 {
+        width: 70px;
+        height: 40px; }
+      .main-body .side .sidebar2 .sec2 button {
+        width: 40px;
+        height: 40px; }
+      .main-body .side .sidebar2 .sec3 ul {
+        padding-left: 0; }
+        .main-body .side .sidebar2 .sec3 ul li {
+          display: inline-block; }
+          .main-body .side .sidebar2 .sec3 ul li a span {
+            width: 20px;
+            height: 20px;
+            border: 1px solid black;
+            padding: 0px 10px 5px 10px; }
+          .main-body .side .sidebar2 .sec3 ul li a .color1 {
+            background-color: #F40932; }
+          .main-body .side .sidebar2 .sec3 ul li a .color2 {
+            background-color: #FF7F00; }
+          .main-body .side .sidebar2 .sec3 ul li a .color3 {
+            background-color: #F3CC09; }
+          .main-body .side .sidebar2 .sec3 ul li a .color4 {
+            background-color: #08C209; }
+          .main-body .side .sidebar2 .sec3 ul li a .color5 {
+            background-color: #0ACCF3; }
+          .main-body .side .sidebar2 .sec3 ul li a .color6 {
+            background-color: #A60AF3; }
+          .main-body .side .sidebar2 .sec3 ul li a .color7 {
+            background-color: #000000; }
+          .main-body .side .sidebar2 .sec3 ul li a .color8 {
+            background-color: #ffffff; }
   .main-body .results {
     width: 800px;
     float: right;
