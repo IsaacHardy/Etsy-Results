@@ -8,6 +8,8 @@ hr {
   border-bottom: 1px solid #E1E3DF;
   border-top: none;
 }
+
+// Header
 header {
   display: inline;
   margin-left: 12em;
@@ -158,6 +160,7 @@ header {
   }
 }
 
+// Nav bar underneath Header
 nav {
 
   margin-left: 12em;
@@ -190,6 +193,7 @@ nav {
   }
 }
 
+// Main body underneath header
 .main-body {
 
   background-color: $backgroundColor;
@@ -207,6 +211,7 @@ nav {
 
   }
 
+  // Side of the screen with two sidebars
   .side {
 
     float: left;
@@ -218,6 +223,7 @@ nav {
 
     }
 
+    // Sidebar on the top left of screen
     .sidebar1 {
 
       width: 245px;
@@ -251,6 +257,7 @@ nav {
 
     }
 
+    // Sidebar on the bottom left of screen
     .sidebar2 {
 
       width: 245px;
@@ -364,7 +371,7 @@ nav {
       }
       // Section 5 on sidebar 2
       .sec5 {
-        
+
         label {
           display: block;
         }
@@ -383,25 +390,26 @@ nav {
 
   }
 
-
+  // The box area for incoming Javascript pull
   .results {
 
     width: 800px;
     float: right;
     margin-right: 105px;
 
+    // Text above div
     .results-text {
 
       margin-top: 16px;
 
-
+      // Right sided text above div
       .results-text-right {
         display: inline-block;
         margin: 0;
         margin-left: 325px;
         font-size: 13px;
       }
-
+      // Left sided text above div
       .results-text-left {
         display: inline-block;
         margin: 0;
@@ -418,6 +426,7 @@ nav {
 
     }
 
+    // Individual box style 
     .results-box {
       border: 1px solid black;
       float: left;
@@ -436,6 +445,7 @@ nav {
 
       }
 
+      // Text within box
       .results-box-text {
 
         background-color: #fff;
