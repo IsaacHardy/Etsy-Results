@@ -182,6 +182,10 @@ nav {
             background-color: #000000; }
           .main-body .side .sidebar2 .sec3 ul li a .color8 {
             background-color: #ffffff; }
+      .main-body .side .sidebar2 .sec4 label {
+        display: block; }
+      .main-body .side .sidebar2 .sec5 label {
+        display: block; }
   .main-body .results {
     width: 800px;
     float: right;

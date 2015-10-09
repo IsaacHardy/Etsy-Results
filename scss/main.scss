@@ -260,7 +260,7 @@ nav {
       border: 1px solid #E1E3DF;
       background-color: #fff;
       border-radius: 3px;
-
+      // Section 1 on sidebar 2
       .sec1 {
 
         .sec1-list {
@@ -274,7 +274,7 @@ nav {
         }
 
       }
-
+      // Section 2 on sidebar 2
       .sec2 {
 
         .sec2-input1, .sec2-input2, p, button {
@@ -301,7 +301,7 @@ nav {
 
 
       }
-
+      // Section 3 on sidebar 2
       .sec3 {
 
         ul {
@@ -353,18 +353,26 @@ nav {
           }
         }
       }
-
+      // Section 4 on sidebar 2
       .sec4 {
 
+        label {
+          display: block;
+        }
+
 
       }
-
+      // Section 5 on sidebar 2
       .sec5 {
+        
+        label {
+          display: block;
+        }
 
 
 
       }
-
+      // Section 6 on sidebar 2
       .sec6 {
 
 
