@@ -379,6 +379,10 @@ nav {
       cursor: default;
       color: #D1D1CD;
       border-radius: 3px 0 0 3px; }
+      .footer .nav-btn .btn-1:hover {
+        background-color: #F5F5F1;
+        cursor: default;
+        border: 1px solid #D1D1CD; }
     .footer .nav-btn .btn-2 {
       background-color: #F5F5F1;
       z-index: 30;
@@ -394,5 +398,9 @@ nav {
       z-index: 0;
       color: #D1D1CD;
       cursor: default; }
+      .footer .nav-btn .btn-3:hover {
+        background-color: #F5F5F1;
+        cursor: default;
+        border: 1px solid #D1D1CD; }
     .footer .nav-btn .btn-4 {
       border-radius: 0 3px 3px 0; }

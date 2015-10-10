@@ -696,7 +696,15 @@ nav {
         background-color: $backgroundColor;
         cursor: default;
         color: #D1D1CD;
-        border-radius: 3px 0 0 3px
+        border-radius: 3px 0 0 3px;
+
+        &:hover {
+          background-color: $backgroundColor;
+          cursor: default;
+          border: 1px solid #D1D1CD;
+
+
+        }
 
       }
       .btn-2 {
@@ -720,9 +728,17 @@ nav {
         color: #D1D1CD;
         cursor: default;
 
+         &:hover {
+          background-color: $backgroundColor;
+          cursor: default;
+          border: 1px solid #D1D1CD;
+
+
+        }
+
       }
       .btn-4 {
-        border-radius: 0 3px 3px 0
+        border-radius: 0 3px 3px 0;
         
       }
   }
