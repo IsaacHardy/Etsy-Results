@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>whiskey - Etsy</title>
+  <title>dungeons and dragons - Etsy</title>
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -95,7 +95,7 @@
             <p>to</p>
             <span class="dollar2">$</span>
             <input type="search" placeholder="High" class="sec2-input2">
-            <button></button>
+            <button><span class="arrow-btn"></span></button>
           </div>         
 
         </div>
@@ -210,7 +210,7 @@
 
   <script type="text/template" id="itemTemplate">
     <div class='results-box'>
-      <img src="<%= Images[0].url_170x135 %>">
+      <a href="<%= url %>"><img src="<%= Images[0].url_170x135 %>"></a>
       <div class="results-box-text">
         <div class="t-a">
           <p class='title'>
