@@ -6,7 +6,7 @@
 
   var templateFunction = _.template(templateString);
 
-  _.each(drink.results, function (item) {
+  _.each(dragon.results, function (item) {
     var itemHTML = templateFunction(item);
     $('.results').append(itemHTML);
 
