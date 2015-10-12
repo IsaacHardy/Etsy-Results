@@ -552,8 +552,19 @@ nav {
       .results-text-right {
         display: inline-block;
         margin: 0;
-        margin-left: 325px;
+        margin-left: 235px;
         font-size: 13px;
+
+        &:after {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 4px 4px 0 4px;
+            border-color: #CBC9C7 transparent transparent transparent;
+            content: "";
+            display: inline-block;
+            margin-left: 5px;
+        }
       }
       // Left sided text above div
       .results-text-left {
@@ -574,7 +585,6 @@ nav {
 
     // Individual box style 
     .results-box {
-      border: 1px solid black;
       float: left;
       width: 220px;
       height: 222px;
@@ -585,7 +595,7 @@ nav {
       border-radius: 3px;
       position: relative;
 
-      &:hover {
+      &:hover .results-hover{
         visibility: visible;
       }
 
@@ -667,13 +677,12 @@ nav {
 
     // Hover heart and burger
     .results-hover {
-        // visibility: hidden;
+        visibility: hidden;
         position: absolute;
         right: 5px;
         top: 5px;
 
         .heart {
-          border: 1px solid black;
           height: 25px;
           width: 26px;
           float: left;
@@ -695,10 +704,14 @@ nav {
 
           }
 
+          &:hover {
+            background-color: #f9f9f4;
+            border-color: rgba(0, 0, 0, 0.2);
+          }
+
 
         }
         .burger {
-          border: 1px solid black;
           height: 25px;
           width: 34px;
           float: left;
@@ -733,11 +746,16 @@ nav {
             right: 5px;
           }
 
+          &:hover {
+            background-color: #f9f9f4;
+            border-color: rgba(0, 0, 0, 0.2);
+          }
+
         }
     }
 
   }
-
+}
 // Footer
 .footer {
   background-color: $backgroundColor;
@@ -870,5 +888,4 @@ nav {
       }
   }
 
-}
 }

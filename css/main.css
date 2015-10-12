@@ -301,8 +301,17 @@ nav {
       .main-body .results .results-text .results-text-right {
         display: inline-block;
         margin: 0;
-        margin-left: 325px;
+        margin-left: 235px;
         font-size: 13px; }
+        .main-body .results .results-text .results-text-right:after {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 4px 4px 0 4px;
+          border-color: #CBC9C7 transparent transparent transparent;
+          content: "";
+          display: inline-block;
+          margin-left: 5px; }
       .main-body .results .results-text .results-text-left {
         display: inline-block;
         margin: 0;
@@ -311,7 +320,6 @@ nav {
         .main-body .results .results-text .results-text-left span {
           font-weight: bold; }
     .main-body .results .results-box {
-      border: 1px solid black;
       float: left;
       width: 220px;
       height: 222px;
@@ -321,7 +329,7 @@ nav {
       border: 1px solid #E1E3DF;
       border-radius: 3px;
       position: relative; }
-      .main-body .results .results-box:hover {
+      .main-body .results .results-box:hover .results-hover {
         visibility: visible; }
       .main-body .results .results-box img {
         width: 100%;
@@ -356,11 +364,11 @@ nav {
           .main-body .results .results-box .results-box-text .p-c .currency {
             display: inline-block; }
     .main-body .results .results-hover {
+      visibility: hidden;
       position: absolute;
       right: 5px;
       top: 5px; }
       .main-body .results .results-hover .heart {
-        border: 1px solid black;
         height: 25px;
         width: 26px;
         float: left;
@@ -378,8 +386,10 @@ nav {
           background-size: 16px;
           margin-top: 4px;
           margin-left: 4px; }
+        .main-body .results .results-hover .heart:hover {
+          background-color: #f9f9f4;
+          border-color: rgba(0, 0, 0, 0.2); }
       .main-body .results .results-hover .burger {
-        border: 1px solid black;
         height: 25px;
         width: 34px;
         float: left;
@@ -408,83 +418,87 @@ nav {
           position: absolute;
           top: 12px;
           right: 5px; }
-  .main-body .footer {
-    background-color: #F5F5F1;
-    font-size: 13px;
-    padding-left: 467px;
+        .main-body .results .results-hover .burger:hover {
+          background-color: #f9f9f4;
+          border-color: rgba(0, 0, 0, 0.2); }
+
+.footer {
+  background-color: #F5F5F1;
+  font-size: 13px;
+  padding-left: 467px;
+  margin-top: -4px;
+  padding-top: 10px;
+  color: #555555;
+  padding-bottom: 40px; }
+  .footer a {
+    text-decoration: none;
+    color: #34A8C4; }
+    .footer a:hover {
+      text-decoration: underline; }
+  .footer .footer-head {
     margin-top: -4px;
-    padding-top: 10px;
-    color: #555555;
-    padding-bottom: 40px; }
-    .main-body .footer a {
-      text-decoration: none;
-      color: #34A8C4; }
-      .main-body .footer a:hover {
-        text-decoration: underline; }
-    .main-body .footer .footer-head {
-      margin-top: -4px;
-      margin-bottom: 0; }
-      .main-body .footer .footer-head span {
-        font-weight: bold; }
-    .main-body .footer .ulcontain {
-      padding-top: 6px; }
-      .main-body .footer .ulcontain ul {
-        list-style: none;
-        display: inline-block; }
-        .main-body .footer .ulcontain ul li {
-          padding-top: 6px;
-          width: 120px; }
-      .main-body .footer .ulcontain .ulone {
-        padding-left: 0; }
-      .main-body .footer .ulcontain .ulthree {
-        vertical-align: top; }
-      .main-body .footer .ulcontain .p-bot {
-        margin-top: 8px;
-        padding-bottom: 8px; }
-    .main-body .footer .nav-btn {
-      margin-top: 18px;
-      margin-left: 0; }
-      .main-body .footer .nav-btn a {
-        padding: 8px 12px;
-        border: 1px solid #D1D1CD;
-        background-color: #ffffff;
-        color: #555555;
-        font-weight: bold;
-        margin-right: -5px;
-        position: relative;
-        border-radius: 0;
-        z-index: 10; }
-        .main-body .footer .nav-btn a:hover {
-          border: 1px solid silver;
-          background-color: #F5F5F1;
-          text-decoration: none; }
-      .main-body .footer .nav-btn .btn-1 {
+    margin-bottom: 0; }
+    .footer .footer-head span {
+      font-weight: bold; }
+  .footer .ulcontain {
+    padding-top: 6px; }
+    .footer .ulcontain ul {
+      list-style: none;
+      display: inline-block; }
+      .footer .ulcontain ul li {
+        padding-top: 6px;
+        width: 120px; }
+    .footer .ulcontain .ulone {
+      padding-left: 0; }
+    .footer .ulcontain .ulthree {
+      vertical-align: top; }
+    .footer .ulcontain .p-bot {
+      margin-top: 8px;
+      padding-bottom: 8px; }
+  .footer .nav-btn {
+    margin-top: 18px;
+    margin-left: 0; }
+    .footer .nav-btn a {
+      padding: 8px 12px;
+      border: 1px solid #D1D1CD;
+      background-color: #ffffff;
+      color: #555555;
+      font-weight: bold;
+      margin-right: -5px;
+      position: relative;
+      border-radius: 0;
+      z-index: 10; }
+      .footer .nav-btn a:hover {
+        border: 1px solid silver;
+        background-color: #F5F5F1;
+        text-decoration: none; }
+    .footer .nav-btn .btn-1 {
+      background-color: #F5F5F1;
+      cursor: default;
+      color: #D1D1CD;
+      border-radius: 3px 0 0 3px; }
+      .footer .nav-btn .btn-1:hover {
         background-color: #F5F5F1;
         cursor: default;
-        color: #D1D1CD;
-        border-radius: 3px 0 0 3px; }
-        .main-body .footer .nav-btn .btn-1:hover {
-          background-color: #F5F5F1;
-          cursor: default;
-          border: 1px solid #D1D1CD; }
-      .main-body .footer .nav-btn .btn-2 {
-        background-color: #F5F5F1;
-        z-index: 30;
+        border: 1px solid #D1D1CD; }
+    .footer .nav-btn .btn-2 {
+      background-color: #F5F5F1;
+      z-index: 30;
+      border: 1px solid #555555;
+      cursor: default; }
+      .footer .nav-btn .btn-2:hover {
         border: 1px solid #555555;
-        cursor: default; }
-        .main-body .footer .nav-btn .btn-2:hover {
-          border: 1px solid #555555;
-          background-color: #F5F5F1;
-          text-decoration: none;
-          cursor: default; }
-      .main-body .footer .nav-btn .btn-3 {
         background-color: #F5F5F1;
-        z-index: 0;
-        color: #D1D1CD;
+        text-decoration: none;
         cursor: default; }
-        .main-body .footer .nav-btn .btn-3:hover {
-          background-color: #F5F5F1;
-          cursor: default;
-          border: 1px solid #D1D1CD; }
-      .main-body .footer .nav-btn .btn-4 {
-        border-radius: 0 3px 3px 0; }
+    .footer .nav-btn .btn-3 {
+      background-color: #F5F5F1;
+      z-index: 0;
+      color: #D1D1CD;
+      cursor: default; }
+      .footer .nav-btn .btn-3:hover {
+        background-color: #F5F5F1;
+        cursor: default;
+        border: 1px solid #D1D1CD; }
+    .footer .nav-btn .btn-4 {
+      border-radius: 0 3px 3px 0; }
